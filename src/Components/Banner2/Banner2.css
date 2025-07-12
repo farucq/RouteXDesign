@@ -1,0 +1,119 @@
+.Banner2{
+    background-color:white ;
+    height: 600px;
+}
+.leftBanner2{
+    width: 50%;
+}
+.img1 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin-left: 120px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
+.img2 img{
+    width: 290px;
+    border-radius: 15px;
+    margin-top: 75px;
+    margin-left: 20px;
+}
+.img3 img{
+    width: 370px;
+    border-radius: 20px;  
+    height: 260px;
+    position: absolute;
+    z-index: 11;
+    margin-left: 232px;
+    
+}
+.img3{
+    margin-top: -71px;
+}
+.letfImg{
+    display: flex;
+    
+}
+.rightImg{
+    display: flex;
+    padding-left: 154px;
+    margin-top: 20px;
+}
+.textBox{
+    background-color: brown;
+    justify-items: center;
+    margin-right: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 23px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    color: white;
+    position: absolute;
+    z-index: 9;
+}
+.dotImg img{
+    width:320px;
+    height: 268px;
+    z-index: 6;
+    position: absolute;
+}
+.dotImg{
+    margin-top: -53px;
+    margin-left: -68px;
+}
+
+.rightBanner2{
+    position: relative;
+    width: 40%;
+    margin-left: 51rem;
+    margin-top: -260px;
+    font-weight: 600;
+}
+.titleBanner2{
+    margin-top: 8px;
+    color: rgb(76, 21, 21);
+    letter-spacing: 1px;
+}
+.subTitleBanner2 { 
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.subDiv{
+    display: flex;
+    gap: 10px;
+}
+.subDiv .leftDiv, .rightDiv{
+    width: 50%;
+     
+}
+.subDiv p{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.buttonBanner2{
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+.buttonBanner2 button{
+    outline: none;
+    border: none;
+    padding: 13px 25px;
+    background-color: #542e2e;
+    color: white;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+    
+}
+.buttonBanner2 :hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transform: scale(1.03);
+}
