@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/RouteXDesign/static/css/main.6ec82ec6.css",
+    "main.js": "/RouteXDesign/static/js/main.a3c4a2e1.js",
+    "static/js/453.485a2287.chunk.js": "/RouteXDesign/static/js/453.485a2287.chunk.js",
+    "static/media/logo.svg": "/RouteXDesign/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/RouteXDesign/index.html",
+    "main.6ec82ec6.css.map": "/RouteXDesign/static/css/main.6ec82ec6.css.map",
+    "main.a3c4a2e1.js.map": "/RouteXDesign/static/js/main.a3c4a2e1.js.map",
+    "453.485a2287.chunk.js.map": "/RouteXDesign/static/js/453.485a2287.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ec82ec6.css",
+    "static/js/main.a3c4a2e1.js"
+  ]
+}
