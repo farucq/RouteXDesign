@@ -1,47 +1,18 @@
-.navbar{
-  width: 100%;
+.text-brown {
   color: brown;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: white;
-}
-.brandName{
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-}
-.brandName img{
-  width: 40px;
-  margin-right: 3px;
-  margin-top: -6px;
 }
 
-.help{
-  margin-right: 70px;
-  display: flex;
-}
-
-.helpImg img{
-    width: 40px;
-    margin-right: 8px;
-    margin-top: 5px;
-}
-.actions{
-  display: flex;
-  gap: 25px;
-}
-.help .needHelp{
-  color: #7e7e7e;
-}
-.home,.about,.story,.visa,.blog,.page,.contact{
-  cursor: pointer;
+.navbar .nav-link {
+  color: brown;
+  font-weight: 500;
   transition: transform 0.2s ease;
 }
-.home:hover,.about:hover,.story:hover,.visa:hover,.blog:hover,.page:hover,.contact:hover{
-  transform: scale(1.04);
+
+.navbar .nav-link:hover {
   color: black;
+  transform: scale(1.05);
+}
+
+.text-muted {
+  color: #7e7e7e !important;
 }
