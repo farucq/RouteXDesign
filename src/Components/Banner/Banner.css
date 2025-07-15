@@ -1,51 +1,59 @@
-.Banner{
-    background-image: url('https://png.pngtree.com/background/20230528/original/pngtree-an-airplane-flying-through-clouds-at-sunset-picture-image_2782700.jpg');
-    width: 100%;
-    height: 575px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 65px;
-    position: relative;
-}
-.Banner1{
-    justify-items: center;
-}
-.mainHeading{
-    color: white;
-    justify-items: center;
-    font-size: 50px;
-    font-weight: 600;
-    position: absolute;
-    margin-top: 115px;
-}
-.mainHeading .subHeading{
-    color: brown;
-}
-.Banner1 .overview{
-    justify-items: center;
-    position: absolute;
-    margin-top: 275px;
-    color: white;
-}
-.firstButton{
-    position: absolute;
-    margin-top: 355px;
-}
-.firstButton button{
-    outline: none;
-    border: none;
-    padding: 13px 25px;
-    background-color: #542e2e;
-    color: white;
-    border-radius: 24px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: transform 0.3s ease;
-}
-.firstButton :hover{
-    cursor: pointer;
-    color: #542e2e;
-    background-color: white;
-    transform: scale(1.03);
+.Banner {
+  background-image: url('https://png.pngtree.com/background/20230528/original/pngtree-an-airplane-flying-through-clouds-at-sunset-picture-image_2782700.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 575px;
+  margin-top: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.mainHeading {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.mainHeading .subHeading {
+  color: brown;
+}
+
+.overview {
+  color: white;
+  font-size: 1rem;
+}
+
+.firstButton button {
+  outline: none;
+  border: none;
+  padding: 13px 25px;
+  background-color: #542e2e;
+  color: white;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.firstButton button:hover {
+  cursor: pointer;
+  color: #542e2e;
+  background-color: white;
+  transform: scale(1.03);
+}
+
+@media (max-width : 620px) {
+  .mainHeading{
+    font-size: 30px;
+  } 
+  .overview{
+    font-size: 13px;
+  } 
+  .firstButton button {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+}
