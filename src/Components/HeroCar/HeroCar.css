@@ -1,0 +1,102 @@
+.hero-car{
+  position: relative;
+  width: 100%;
+  height: 72vh;
+  margin-top: 64px;
+  background-image: url('https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  overflow: hidden;
+}
+
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0.55) 100%);
+}
+
+.hero-content{
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero-pill{
+  display: inline-block;
+  background: rgba(255,255,255,0.14);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero-title{
+  font-size: clamp(32px, 6vw, 64px);
+  line-height: 1.05;
+  font-weight: 800;
+  margin: 6px 0 12px;
+  text-shadow: 0 8px 24px rgba(0,0,0,0.45);
+}
+
+.hero-subtitle{
+  font-size: clamp(14px, 2.4vw, 18px);
+  max-width: 720px;
+  color: #e9eef5;
+  opacity: 0.95;
+}
+
+.hero-actions{
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.btn-primary{
+  background: linear-gradient(135deg, #ff6b3d, #f4386c);
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 10px 20px rgba(244,56,108,0.35);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(244,56,108,0.42);
+  cursor: pointer;
+}
+
+.btn-ghost{
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.btn-ghost:hover{
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.16);
+  cursor: pointer;
+}
