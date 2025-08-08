@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>CarModel — Explore Beautiful Cars</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="brand">
+          <span class="logo">CM</span>
+          <span class="brand-text">CarModel</span>
+        </a>
+
+        <nav class="nav">
+          <a href="#models" class="nav-link">Models</a>
+          <a href="#electric" class="nav-link">Electric</a>
+          <a href="#suvs" class="nav-link">SUVs</a>
+          <a href="#luxury" class="nav-link">Luxury</a>
+          <a href="#about" class="nav-link">About</a>
+        </nav>
+
+        <div class="header-actions">
+          <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+            <span class="material-symbols-rounded">dark_mode</span>
+          </button>
+          <button id="wishlistOpen" class="icon-btn" aria-label="Open wishlist">
+            <span class="material-symbols-rounded">favorite</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="hero container">
+        <div class="hero-content">
+          <h1>Find your dream <span class="gradient-text">car</span></h1>
+          <p class="subtitle">Browse hand‑picked electric, luxury, and performance models. Smart filters. Stunning visuals.</p>
+
+          <div class="search-bar">
+            <span class="material-symbols-rounded">search</span>
+            <input id="searchInput" type="text" placeholder="Search by brand or model (e.g., Tesla, Supra)" />
+            <button id="clearSearch" class="ghost-btn" aria-label="Clear search">Clear</button>
+          </div>
+
+          <div class="filters">
+            <label class="select">
+              <span class="label">Brand</span>
+              <select id="brandFilter">
+                <option value="all">All</option>
+                <option value="Tesla">Tesla</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Land Rover">Land Rover</option>
+                <option value="Hyundai">Hyundai</option>
+              </select>
+            </label>
+
+            <label class="select">
+              <span class="label">Type</span>
+              <select id="typeFilter">
+                <option value="all">All</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Coupe">Coupe</option>
+                <option value="Hatchback">Hatchback</option>
+              </select>
+            </label>
+
+            <label class="select">
+              <span class="label">Price</span>
+              <select id="priceFilter">
+                <option value="all">All</option>
+                <option value="under30">Under $30k</option>
+                <option value="30to60">$30k — $60k</option>
+                <option value="60to100">$60k — $100k</option>
+                <option value="over100">Over $100k</option>
+              </select>
+            </label>
+
+            <div class="chip-group" role="group" aria-label="Fuel type">
+              <button class="chip is-active" data-fuel="all">All</button>
+              <button class="chip" data-fuel="EV">EV</button>
+              <button class="chip" data-fuel="Hybrid">Hybrid</button>
+              <button class="chip" data-fuel="Gasoline">Gasoline</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cards container" id="models">
+        <div id="carGrid" class="card-grid" aria-live="polite"></div>
+        <div id="emptyState" class="empty-state" hidden>
+          <span class="material-symbols-rounded">directions_car</span>
+          <h3>No cars match your filters</h3>
+          <p>Try adjusting your search or clearing filters.</p>
+          <button id="resetFilters" class="primary-btn">Reset filters</button>
+        </div>
+      </section>
+
+      <section id="electric"></section>
+      <section id="suvs"></section>
+      <section id="luxury"></section>
+      <section id="about"></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="logo">CM</span>
+          <div>
+            <div class="brand-text">CarModel</div>
+            <p>Curating remarkable cars for every journey.</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h4>Explore</h4>
+            <a href="#models">All Models</a>
+            <a href="#electric">Electric</a>
+            <a href="#suvs">SUVs</a>
+            <a href="#luxury">Luxury</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="#about">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+          </div>
+          <div>
+            <h4>Follow</h4>
+            <div class="social">
+              <a href="#" aria-label="Twitter" class="icon-btn"><span class="material-symbols-rounded">public</span></a>
+              <a href="#" aria-label="Instagram" class="icon-btn"><span class="material-symbols-rounded">photo_camera</span></a>
+              <a href="#" aria-label="YouTube" class="icon-btn"><span class="material-symbols-rounded">smart_display</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="legal">© <span id="year"></span> CarModel. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
